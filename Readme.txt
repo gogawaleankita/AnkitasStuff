@@ -1,2 +1,1 @@
-Repository for 
-all d3 v4 codes 
+Repository for angular project with D3 demos 
