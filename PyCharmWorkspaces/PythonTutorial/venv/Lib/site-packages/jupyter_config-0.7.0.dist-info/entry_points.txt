@@ -1,0 +1,3 @@
+[console_scripts]
+jupyter-config = jupyter_config.configapp:main
+

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jupyter-config
+Version: 0.7.0
+Summary: UNKNOWN
+Home-page: https://github.com/mpacer/jupyter_config
+Author: M Pacer
+Author-email: mpacer@berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: dev
+Requires-Dist: jupyter-core
+Requires-Dist: notebook (>=5.3)
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+
+UNKNOWN
+
+
