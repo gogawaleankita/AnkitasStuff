@@ -1,6 +1,0 @@
-#!E:\D\PyCharmWorkspaces\PythonTutorial\venv\Scripts\python.exe
-
-from notebook.nbextensions import main
-
-if __name__ == '__main__':
-    main()
