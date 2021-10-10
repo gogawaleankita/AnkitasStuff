@@ -1,0 +1,39 @@
+#!/bin/python3
+
+import sys
+import os
+
+
+
+# Add Celsius class implementation below.
+class Clesius(object) :
+    def __get__(self, obj, objtype):
+        print("inside get ",self.celsius,"  ",self.fahrenheit) 
+        return (self.celsius )
+    def __set__(self,obj,value):
+        print("inside set") 
+        self.fahrenheit=(value * 9/5) + 32
+        self.celsius=value
+        print(self.fahrenheit,"  ",self.celsius)
+    obj=property(__get__,__set__)
+
+# Add temperature classementation below.        
+class Temperature(object):
+   celsius=Clesius()
+   def __init__(self,temp):
+    print("inside temperture")   
+    self.fahrenheit=temp
+    self.celsius=(temp - 32) * 5/9
+    print("finsihed",self.fahrenheit,"  ",self.celsius)
+
+
+        
+
+if __name__ == "__main__":
+    
+    res_lst = list()
+    t1 = Temperature(32)
+    res_lst.append((t1.fahrenheit, t1.celsius))
+    t1.celsius = int(0)
+    res_lst.append((t1.fahrenheit, t1.celsius))
+    print("{}\n{}".format(*res_lst))
